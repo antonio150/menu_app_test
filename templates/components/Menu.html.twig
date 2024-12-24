@@ -1,0 +1,9 @@
+{% for item in items %}
+
+<li>
+<a href="{{ path(item.route) }}" {% if item.route == activeRoute %} class="active" {% endif %} >
+    {{ item.label }}
+</a>
+</li>
+
+{% endfor %}

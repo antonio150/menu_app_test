@@ -12,6 +12,9 @@
         {% endblock %}
     </head>
     <body>
+
+        {{ component('menu', { activeRoute: app.request.attributes.get('_route')  }) }}
+
         {% block body %}{% endblock %}
     </body>
 </html>
